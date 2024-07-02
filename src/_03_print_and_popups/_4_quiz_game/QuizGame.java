@@ -4,14 +4,21 @@ import javax.swing.JOptionPane;
 
 public class QuizGame {
 	public static void main(String[] args) {
-		
+	
 		// Create a variable to hold the user's score. Set it equal to zero. 
 		int score= 0;
+		
 		// ASK A QUESTION AND CHECK THE ANSWER
-		String Crookshanks=JOptionPane.showInputDialog("What did I name my cat?")
+		String Crookshanks=JOptionPane.showInputDialog("What did I name my cat?");
 		 
-		if("Crookshanks".equals("Crookshanks")) {int score=score+1;
+		if(Crookshanks.equals("Crookshanks")) { score=score+1;
+			
 		}
+		
+			
+		 else{ score=score-1;}
+			
+		
 	
 				// 2.  Ask the user a question 
 				
@@ -24,6 +31,14 @@ public class QuizGame {
 		
 		
 		// After all the questions have been asked, tell the user their final score 
-		
+		 
+
+		 String Science=JOptionPane.showInputDialog("What is my least favorite subject?");
+
+		 if(Science.equals("Science")) {score=score+1;
+		}
+		else{score=score-1;}
+		JOptionPane.showInputDialog(score);
+
 	}
 }
