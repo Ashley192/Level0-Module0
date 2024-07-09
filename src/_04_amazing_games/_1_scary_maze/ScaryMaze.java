@@ -127,6 +127,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		// 12. Find a scary image and drop it into the _04_amazing_games._1_scary_maze
 		// package.
 		// Use the showScaryImage method below and send it the name of your picture file
+		showScaryImage("Scary.jpeg");
 
 	}
 

@@ -7,6 +7,7 @@ public class SmartShapes {
     public static void main(String[] args) throws Exception {
         // Make a new Robot
 Robot bob = new Robot();
+bob.miniaturize();
 
         // Put the robot's pen down
 bob.penDown();
@@ -25,10 +26,10 @@ bob.setSpeed(1000);
 			
 		
         //         MOVE your robot 200 pixels
-bob.move(100);
+bob.move(200);
 
         //         TURN the robot 90 degrees to the right
-    	bob.turn(36);
+    	bob.turn(90);
     	
     	//         COUNT. Add one to the number of sides the robot has drawn      sides+=1;
 sides+=1;
